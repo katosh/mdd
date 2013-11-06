@@ -11,3 +11,4 @@ for i=1:2
 	figure(2+((i-1)*2))	
 	plot(x,y(3,:))
 	title(['Histogramm fuer a = ',num2str(i*2),' S^2']);
+end
