@@ -4,11 +4,12 @@ x=0:1/n:1;
 for i=1:2
 
 	[e,y]=saufg(i*2,2,x);
-	figure(1+((i-1)*2))
-	plot(x,y(2,:))
-	title(['Histogramm fuer a = ',num2str(i*2),' S']);
-
-	figure(2+((i-1)*2))	
-	plot(x,y(3,:))
-	title(['Histogramm fuer a = ',num2str(i*2),' S^2']);
+	
+	for j=1:2
+		figure(j+((i-1)*2))
+		%plot(x,y(j+1,:))
+		hist(y(j+1,:))
+		title(['Histogramm fuer a = ',num2str(i*2),' nach ',num2str(j),...
+		' Anwednungen von S']);
+	end
 end
