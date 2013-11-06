@@ -3,7 +3,7 @@ for j=0:1
 
 	for i=1:2
 		[e,y]=saufg(2*i,5000,x);
-		figure(i+(2*i))
+		figure(i+(2*j))
 		plot(y);
 	end
 end
